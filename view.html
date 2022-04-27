@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link
+        rel="stylesheet"
+            href="./style.css"
+        />
+        <title>Call Listening Tool</title>
+        <script src="logic.js"></script>
+      
+    </head>
+    <body>
+        <div class="container">
+            <div>
+                <h1>Nuance Call Listening tool</h1>
+            <h3>Filters</h3>
+            <div class="form">
+                <form>
+                    <div>
+                    <label for="ani">ANI:</label>
+                    <input type="text" id="ani" name="ani">
+                </div>
+                <div>
+                    <label for="date">Date of Call:</label>
+                    <input type="date" id="date" name="date">
+                </div>
+                <div>
+                    <label for="uuid">UUID:</label>
+                    <input type="text" id="uuid" name="uuid">
+                </div>
+                <div>
+                    <label for="tfn">TFN:</label>
+                    <input type="text" id="tfn" name="tfn">
+                </div>
+                   <div>
+                    <input class="submit" type="button" value="Search" onclick="CreateTableFromJSON()">
+                </div>
+                <div>
+                    <input class="submit" type="button" value="Show All" onclick="CreateTableFromJSON()">
+                </div>
+                  </form>
+                  <div id="table-container"></div>
+               
+            </div>
+            </div>
+            <div>
+                <img src="headphone.svg" alt="Headphone">
+            </div>
+            
+        </div>
+       
+     
+    </body>
+</html>
